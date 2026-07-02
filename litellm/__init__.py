@@ -587,6 +587,7 @@ watsonx_models: Set = set()
 gemini_models: Set = set()
 xai_models: Set = set()
 zai_models: Set = set()
+stepfun_models: Set = set()
 deepseek_models: Set = set()
 runwayml_models: Set = set()
 azure_ai_models: Set = set()
@@ -797,6 +798,8 @@ def add_known_models(model_cost_map: Optional[Dict] = None):
             xai_models.add(key)
         elif value.get("litellm_provider") == "zai":
             zai_models.add(key)
+        elif value.get("litellm_provider") == "stepfun":
+            stepfun_models.add(key)
         elif value.get("litellm_provider") == "fal_ai":
             fal_ai_models.add(key)
         elif value.get("litellm_provider") == "deepseek":
@@ -992,6 +995,7 @@ model_list = list(
     | text_completion_inception_models
     | xai_models
     | zai_models
+    | stepfun_models
     | fal_ai_models
     | deepseek_models
     | modelscope_models
@@ -1091,6 +1095,7 @@ models_by_provider: dict = {
     "text-completion-inception": text_completion_inception_models,
     "xai": xai_models,
     "zai": zai_models,
+    "stepfun": stepfun_models,
     "fal_ai": fal_ai_models,
     "deepseek": deepseek_models,
     "runwayml": runwayml_models,
@@ -1887,6 +1892,7 @@ if TYPE_CHECKING:
     )
     from .llms.xai.chat.transformation import XAIChatConfig as XAIChatConfig
     from .llms.zai.chat.transformation import ZAIChatConfig as ZAIChatConfig
+    from .llms.stepfun.chat.transformation import StepFunChatConfig as StepFunChatConfig
     from .llms.aiml.chat.transformation import AIMLChatConfig as AIMLChatConfig
     from .llms.volcengine.chat.transformation import (
         VolcEngineChatConfig as VolcEngineChatConfig,

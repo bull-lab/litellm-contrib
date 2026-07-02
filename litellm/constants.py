@@ -734,6 +734,7 @@ openai_compatible_providers: List = [
     "xinference",
     "xai",
     "zai",
+    "stepfun",
     "together_ai",
     "fireworks_ai",
     "empower",

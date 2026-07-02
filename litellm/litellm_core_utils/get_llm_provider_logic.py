@@ -700,6 +700,11 @@ def _get_openai_compatible_provider_info(
             api_base,
             dynamic_api_key,
         ) = litellm.ZAIChatConfig()._get_openai_compatible_provider_info(api_base, api_key)
+    elif custom_llm_provider == "stepfun":
+        (
+            api_base,
+            dynamic_api_key,
+        ) = litellm.StepFunChatConfig()._get_openai_compatible_provider_info(api_base, api_key)
     elif custom_llm_provider == "together_ai":
         api_base = api_base or get_secret_str("TOGETHER_AI_API_BASE") or "https://api.together.xyz/v1"  # type: ignore
         dynamic_api_key = api_key or (
