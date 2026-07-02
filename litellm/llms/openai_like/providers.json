@@ -132,6 +132,11 @@
     },
     "supported_endpoints": ["/v1/chat/completions", "/v1/responses"]
   },
+  "stepfun": {
+    "base_url": "https://api.stepfun.ai/v1",
+    "api_key_env": "STEPFUN_API_KEY",
+    "api_base_env": "STEPFUN_API_BASE"
+  },
   "tensormesh": {
     "base_url": "https://serverless.tensormesh.ai/v1",
     "api_key_env": "TENSORMESH_INFERENCE_API_KEY",

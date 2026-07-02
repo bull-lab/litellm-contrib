@@ -106,6 +106,7 @@ export enum Providers {
   WATSONX_TEXT = "Watsonx Text",
   xAI = "xAI",
   XINFERENCE = "Xinference",
+  STEPFUN = "StepFun",
   ZAI = "Z.AI (Zhipu AI)",
 }
 
@@ -215,6 +216,7 @@ export const provider_map: Record<string, string> = {
   WATSONX_TEXT: "watsonx_text",
   xAI: "xai",
   XINFERENCE: "xinference",
+  STEPFUN: "stepfun",
   ZAI: "zai",
 };
 
@@ -340,7 +342,17 @@ export const getProviderLogoAndName = (providerValue: string): { logo: string; d
   return { logo, displayName };
 };
 
+const SIMPLE_PROVIDER_PLACEHOLDERS: Partial<Record<Providers, string>> = {
+  [Providers.STEPFUN]: "stepfun/step-3.5-flash",
+  [Providers.ZAI]: "zai/glm-4.5",
+};
+
 export const getPlaceholder = (selectedProvider: string): string => {
+  const simplePlaceholder = SIMPLE_PROVIDER_PLACEHOLDERS[selectedProvider as Providers];
+  if (simplePlaceholder) {
+    return simplePlaceholder;
+  }
+
   if (selectedProvider === Providers.AIML) {
     return "aiml/flux-pro/v1.1";
   } else if (selectedProvider === Providers.Vertex_AI) {
@@ -377,8 +389,6 @@ export const getPlaceholder = (selectedProvider: string): string => {
     return "watsonx/ibm/granite-3-3-8b-instruct";
   } else if (selectedProvider === Providers.Cursor) {
     return "cursor/claude-4-sonnet";
-  } else if (selectedProvider === Providers.ZAI) {
-    return "zai/glm-4.5";
   } else {
     return "gpt-3.5-turbo";
   }
