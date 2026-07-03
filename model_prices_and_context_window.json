@@ -32512,7 +32512,7 @@
         "litellm_provider": "together_ai",
         "max_input_tokens": 262000,
         "mode": "chat",
-        "output_cost_per_token": 6e-06,
+        "output_cost_per_token": 6e-07,
         "source": "https://www.together.ai/models/qwen3-235b-a22b-instruct-2507-fp8",
         "supports_function_calling": true,
         "supports_parallel_function_calling": true,
@@ -32615,10 +32615,10 @@
         "supports_tool_choice": true
     },
     "together_ai/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
-        "input_cost_per_token": 8.8e-07,
+        "input_cost_per_token": 1.04e-06,
         "litellm_provider": "together_ai",
         "mode": "chat",
-        "output_cost_per_token": 8.8e-07,
+        "output_cost_per_token": 1.04e-06,
         "supports_function_calling": true,
         "supports_parallel_function_calling": true,
         "supports_response_schema": true,
@@ -32854,6 +32854,7 @@
         "supports_parallel_function_calling": true,
         "supports_response_schema": true,
         "supports_tool_choice": true
+        "cache_read_input_token_cost": 3.5e-07,
     },
     "tts-1": {
         "input_cost_per_character": 1.5e-05,
