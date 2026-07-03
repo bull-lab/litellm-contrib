@@ -379,8 +379,7 @@ def test_get_cost_for_vertex_ai_gemini_web_search(model, custom_llm_provider):
         standard_built_in_tools_params=None,
     )
 
-    # Vertex AI charges $0.035 per grounded request
-    assert cost == 0.035, f"Expected $0.035 grounding cost, got ${cost}"
+    assert cost == 0.014, f"Expected $0.014 grounding cost, got ${cost}"
 
 
 def test_azure_assistant_features_integrated_cost_tracking():

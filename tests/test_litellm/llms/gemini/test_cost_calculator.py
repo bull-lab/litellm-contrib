@@ -49,18 +49,18 @@ def test_per_prompt_billing():
     model_info = {
         "key": "gemini/gemini-2.5-flash",
         "search_context_cost_per_query": {
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
         },
     }
     cost = cost_per_web_search_request(usage=_make_usage(3), model_info=model_info)
-    assert cost == pytest.approx(0.035 * 1)
+    assert cost == pytest.approx(0.014 * 1)
 
 
 def test_default_billing_unit_is_per_prompt():
     """Without web_search_billing_unit, defaults to per_prompt (clamp to 1)."""
     model_info = {"key": "gemini/gemini-2.0-flash"}
     cost = cost_per_web_search_request(usage=_make_usage(2), model_info=model_info)
-    assert cost == pytest.approx(0.035 * 1)
+    assert cost == pytest.approx(0.014 * 1)
 
 
 def test_zero_requests():
