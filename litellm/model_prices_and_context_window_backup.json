@@ -16210,21 +16210,21 @@
         "supports_web_search": true,
         "search_context_cost_per_query": {
             "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
             "search_context_size_high": 0.035
         }
     },
     "gemini-2.0-flash-001": {
-        "cache_read_input_token_cost": 3.75e-08,
+        "cache_read_input_token_cost": 2.5e-8,
         "deprecation_date": "2026-06-01",
-        "input_cost_per_audio_token": 1e-06,
-        "input_cost_per_token": 1.5e-07,
+        "input_cost_per_audio_token": 7e-7,
+        "input_cost_per_token": 1e-7,
         "litellm_provider": "vertex_ai-language-models",
         "max_input_tokens": 1048576,
         "max_output_tokens": 8192,
         "max_tokens": 8192,
         "mode": "chat",
-        "output_cost_per_token": 6e-07,
+        "output_cost_per_token": 4e-7,
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
         "supported_modalities": [
             "text",
@@ -16247,12 +16247,12 @@
         "supports_web_search": true,
         "search_context_cost_per_query": {
             "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
             "search_context_size_high": 0.035
         }
     },
     "gemini-2.0-flash-lite": {
-        "cache_read_input_token_cost": 1.875e-08,
+        "cache_read_input_token_cost": 0.0,
         "deprecation_date": "2026-06-01",
         "input_cost_per_audio_token": 7.5e-08,
         "input_cost_per_token": 7.5e-08,
@@ -16282,12 +16282,12 @@
         "supports_web_search": true,
         "search_context_cost_per_query": {
             "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
             "search_context_size_high": 0.035
         }
     },
     "gemini-2.0-flash-lite-001": {
-        "cache_read_input_token_cost": 1.875e-08,
+        "cache_read_input_token_cost": 0.0,
         "deprecation_date": "2026-06-01",
         "input_cost_per_audio_token": 7.5e-08,
         "input_cost_per_token": 7.5e-08,
@@ -16317,7 +16317,7 @@
         "supports_web_search": true,
         "search_context_cost_per_query": {
             "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
             "search_context_size_high": 0.035
         }
     },
@@ -16361,7 +16361,7 @@
         "supports_web_search": true,
         "search_context_cost_per_query": {
             "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
             "search_context_size_high": 0.035
         },
         "supports_image_size": false
@@ -16666,7 +16666,7 @@
         "supports_web_search": true,
         "search_context_cost_per_query": {
             "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
             "search_context_size_high": 0.035
         },
         "supports_image_size": false
@@ -16937,7 +16937,7 @@
         "supports_web_search": true,
         "search_context_cost_per_query": {
             "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
+            "search_context_size_medium": 0.014,
             "search_context_size_high": 0.035
         }
     },
@@ -18796,7 +18796,7 @@
     },
     "gemini-3.5-flash": {
         "cache_read_input_token_cost": 1.5e-07,
-        "input_cost_per_audio_token": 1e-06,
+        "input_cost_per_audio_token": 3e-6,
         "input_cost_per_token": 1.5e-06,
         "litellm_provider": "vertex_ai-language-models",
         "max_input_tokens": 1048576,
