@@ -56,14 +56,13 @@ def cost_per_web_search_request(usage: "Usage", model_info: "ModelInfo") -> floa
     """
     Calculate the cost of web search requests for X.AI models.
 
-    X.AI Live Search costs $25 per 1,000 sources used.
-    Each source costs $0.025.
+    X.AI Live Search costs $5 per 1,000 sources used.
+    Each source costs $0.005.
 
     The number of sources is stored in prompt_tokens_details.web_search_requests
     by the transformation layer to be compatible with the existing detection system.
     """
-    # Cost per source used: $25 per 1,000 sources = $0.025 per source
-    cost_per_source = 25.0 / 1000.0  # $0.025
+    cost_per_source = 5.0 / 1000.0
 
     num_sources_used = 0
 
