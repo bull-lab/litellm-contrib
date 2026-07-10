@@ -20,16 +20,16 @@ def test_azure_ai_gpt_5_5_model_info(model):
     assert info["litellm_provider"] == "azure_ai"
     assert info["mode"] == "chat"
 
-    assert info["input_cost_per_token"] == 5e-06
-    assert info["output_cost_per_token"] == 3e-05
-    assert info["cache_read_input_token_cost"] == 5e-07
+    assert info["input_cost_per_token"] == 1.25e-05
+    assert info["output_cost_per_token"] == 7.5e-05
+    assert info["cache_read_input_token_cost"] == 1.25e-06
 
-    assert info["input_cost_per_token_above_272k_tokens"] == 1e-05
-    assert info["output_cost_per_token_above_272k_tokens"] == 4.5e-05
-    assert info["cache_read_input_token_cost_above_272k_tokens"] == 1e-06
+    assert info["input_cost_per_token_above_272k_tokens"] == 2.5e-05
+    assert info["output_cost_per_token_above_272k_tokens"] == 0.0001125
+    assert info["cache_read_input_token_cost_above_272k_tokens"] == 2.5e-06
 
-    assert info["input_cost_per_token_priority"] == 1e-05
-    assert info["output_cost_per_token_priority"] == 6e-05
+    assert info["input_cost_per_token_priority"] == 2.5e-05
+    assert info["output_cost_per_token_priority"] == 0.00015
 
     assert info["max_input_tokens"] == 1050000
     assert info["max_output_tokens"] == 128000
