@@ -11022,7 +11022,7 @@
         "max_output_tokens": 131072,
         "max_tokens": 131072,
         "mode": "chat",
-        "output_cost_per_token": 3e-08
+        "output_cost_per_token": 2.999999e-08
     },
     "cloudflare/@cf/mistral/mistral-7b-instruct-v0.2-lora": {
         "input_cost_per_token": 0.0,
