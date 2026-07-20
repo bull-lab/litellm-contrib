@@ -25848,13 +25848,13 @@
         "supports_vision": true
     },
     "mistral/mistral-medium": {
-        "input_cost_per_token": 2.7e-06,
+        "input_cost_per_token": 4.0e-07,
         "litellm_provider": "mistral",
         "max_input_tokens": 32000,
         "max_output_tokens": 8191,
         "max_tokens": 8191,
         "mode": "chat",
-        "output_cost_per_token": 8.1e-06,
+        "output_cost_per_token": 2.0e-06,
         "supports_assistant_prefill": true,
         "supports_response_schema": true,
         "supports_tool_choice": true
