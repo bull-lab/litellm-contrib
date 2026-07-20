@@ -370,10 +370,10 @@ class TestXAICostCalculator:
         web_search_cost = cost_per_web_search_request(usage=usage, model_info={})
 
         # Expected cost: 3 sources * $0.025 per source = $0.075
-        expected_cost = 3 * (25.0 / 1000.0)  # 3 * $0.025
+        expected_cost = 3 * (5.0 / 1000.0)  # 3 * $0.025
 
         assert math.isclose(web_search_cost, expected_cost, rel_tol=1e-10)
-        assert math.isclose(web_search_cost, 0.075, rel_tol=1e-10)
+        assert math.isclose(web_search_cost, 0.015, rel_tol=1e-10)
 
     def test_web_search_cost_fallback_calculation(self):
         """Test web search cost calculation using fallback num_sources_used."""
@@ -389,10 +389,10 @@ class TestXAICostCalculator:
         web_search_cost = cost_per_web_search_request(usage=usage, model_info={})
 
         # Expected cost: 5 sources * $0.025 per source = $0.125
-        expected_cost = 5 * (25.0 / 1000.0)  # 5 * $0.025
+        expected_cost = 5 * (5.0 / 1000.0)  # 5 * $0.025
 
         assert math.isclose(web_search_cost, expected_cost, rel_tol=1e-10)
-        assert math.isclose(web_search_cost, 0.125, rel_tol=1e-10)
+        assert math.isclose(web_search_cost, 0.025, rel_tol=1e-10)
 
     def test_web_search_no_sources_used(self):
         """Test web search cost calculation when no sources are used."""

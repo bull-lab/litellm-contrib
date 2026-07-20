@@ -63,7 +63,7 @@ def cost_per_web_search_request(usage: "Usage", model_info: "ModelInfo") -> floa
     by the transformation layer to be compatible with the existing detection system.
     """
     # Cost per source used: $25 per 1,000 sources = $0.025 per source
-    cost_per_source = 25.0 / 1000.0  # $0.025
+    cost_per_source = 5.0 / 1000.0  # $0.025
 
     num_sources_used = 0
 
