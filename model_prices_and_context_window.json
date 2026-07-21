@@ -25255,8 +25255,8 @@
         "max_output_tokens": 8192
     },
     "minimax/MiniMax-M2": {
-        "input_cost_per_token": 3e-07,
-        "output_cost_per_token": 1.2e-06,
+        "input_cost_per_token": 2.55e-07,
+        "output_cost_per_token": 1.02e-06,
         "cache_read_input_token_cost": 3e-08,
         "cache_creation_input_token_cost": 3.75e-07,
         "litellm_provider": "minimax",
