@@ -17886,9 +17886,9 @@
         "supports_web_search": true,
         "tpm": 8000000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         },
         "supports_image_size": false
     },
@@ -18190,9 +18190,9 @@
         "supports_web_search": true,
         "tpm": 250000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         },
         "supports_image_size": false
     },
@@ -18291,7 +18291,7 @@
         "supports_image_size": false
     },
     "gemini/gemini-flash-latest": {
-        "cache_read_input_token_cost": 7.5e-08,
+        "cache_read_input_token_cost": 3e-08,
         "input_cost_per_audio_token": 1e-06,
         "input_cost_per_token": 3e-07,
         "litellm_provider": "gemini",
@@ -18331,13 +18331,13 @@
         "supports_web_search": true,
         "tpm": 250000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         }
     },
     "gemini/gemini-flash-lite-latest": {
-        "cache_read_input_token_cost": 2.5e-08,
+        "cache_read_input_token_cost": 1e-08,
         "input_cost_per_audio_token": 3e-07,
         "input_cost_per_token": 1e-07,
         "litellm_provider": "gemini",
@@ -18377,9 +18377,9 @@
         "supports_web_search": true,
         "tpm": 250000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         }
     },
     "gemini/gemini-2.5-flash-lite-preview-06-17": {
@@ -18486,9 +18486,9 @@
         "supports_web_search": true,
         "tpm": 800000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         }
     },
     "gemini/gemini-2.5-computer-use-preview-10-2025": {
@@ -18739,7 +18739,7 @@
     },
     "gemini/gemini-3.5-flash": {
         "cache_read_input_token_cost": 1.5e-07,
-        "input_cost_per_audio_token": 1e-06,
+        "input_cost_per_audio_token": 3e-06,
         "input_cost_per_token": 1.5e-06,
         "litellm_provider": "gemini",
         "max_input_tokens": 1048576,
@@ -42737,9 +42737,9 @@
         "supports_web_search": true,
         "tpm": 8000000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         }
     },
     "gemini-flash-lite-latest": {
@@ -42783,9 +42783,9 @@
         "supports_web_search": true,
         "tpm": 250000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         }
     },
     "gemini-pro-latest": {
@@ -42828,9 +42828,9 @@
         "supports_web_search": true,
         "tpm": 800000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         }
     },
     "gemini/gemini-pro-latest": {
@@ -42873,9 +42873,9 @@
         "supports_web_search": true,
         "tpm": 800000,
         "search_context_cost_per_query": {
-            "search_context_size_low": 0.035,
-            "search_context_size_medium": 0.035,
-            "search_context_size_high": 0.035
+            "search_context_size_low": 0.014,
+            "search_context_size_medium": 0.014,
+            "search_context_size_high": 0.014
         }
     },
     "gemini-exp-1206": {
