@@ -20005,7 +20005,7 @@
         "supports_vision": true
     },
     "gmi/deepseek-ai/DeepSeek-V3.2": {
-        "input_cost_per_token": 2.8e-07,
+        "input_cost_per_token": 2.9e-07,
         "litellm_provider": "gmi",
         "max_input_tokens": 163840,
         "max_output_tokens": 16384,
@@ -20015,13 +20015,13 @@
         "supports_function_calling": true
     },
     "gmi/deepseek-ai/DeepSeek-V3-0324": {
-        "input_cost_per_token": 2.8e-07,
+        "input_cost_per_token": 2.9e-07,
         "litellm_provider": "gmi",
         "max_input_tokens": 163840,
         "max_output_tokens": 16384,
         "max_tokens": 16384,
         "mode": "chat",
-        "output_cost_per_token": 8.8e-07,
+        "output_cost_per_token": 1.1e-06,
         "supports_function_calling": true
     },
     "gmi/google/gemini-3-pro-preview": {
@@ -20141,7 +20141,7 @@
         "supports_vision": true
     },
     "gmi/zai-org/GLM-4.7-FP8": {
-        "input_cost_per_token": 4e-07,
+        "input_cost_per_token": 6e-07,
         "litellm_provider": "gmi",
         "max_input_tokens": 202752,
         "max_output_tokens": 16384,
