@@ -18739,7 +18739,7 @@
     },
     "gemini/gemini-3.5-flash": {
         "cache_read_input_token_cost": 1.5e-07,
-        "input_cost_per_audio_token": 1e-06,
+        "input_cost_per_audio_token": 3e-06,
         "input_cost_per_token": 1.5e-06,
         "litellm_provider": "gemini",
         "max_input_tokens": 1048576,
