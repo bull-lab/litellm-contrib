@@ -40748,8 +40748,8 @@
     "novita/qwen/qwen3-coder-480b-a35b-instruct": {
         "litellm_provider": "novita",
         "mode": "chat",
-        "input_cost_per_token": 3e-07,
-        "output_cost_per_token": 1.3e-06,
+        "input_cost_per_token": 4e-07,
+        "output_cost_per_token": 1.5e-06,
         "max_input_tokens": 262144,
         "max_output_tokens": 65536,
         "max_tokens": 65536,
