@@ -32615,10 +32615,10 @@
         "supports_tool_choice": true
     },
     "together_ai/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
-        "input_cost_per_token": 1e-06,
+        "input_cost_per_token": 1.04e-06,
         "litellm_provider": "together_ai",
         "mode": "chat",
-        "output_cost_per_token": 1e-06,
+        "output_cost_per_token": 1.04e-06,
         "supports_function_calling": true,
         "supports_parallel_function_calling": true,
         "supports_response_schema": true,
