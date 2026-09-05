@@ -15199,14 +15199,14 @@
         "supports_vision": false
     },
     "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro": {
-        "cache_read_input_token_cost": 1.45e-07,
-        "input_cost_per_token": 1.74e-06,
+        "cache_read_input_token_cost": 6.00e-07,
+        "input_cost_per_token": 1.20e-06,
         "litellm_provider": "fireworks_ai",
         "max_input_tokens": 1048576,
         "max_output_tokens": 384000,
         "max_tokens": 384000,
         "mode": "chat",
-        "output_cost_per_token": 3.48e-06,
+        "output_cost_per_token": 1.20e-06,
         "source": "https://docs.fireworks.ai/serverless/pricing",
         "supports_function_calling": true,
         "supports_reasoning": true,
@@ -15301,7 +15301,7 @@
         "supports_vision": false
     },
     "fireworks_ai/accounts/fireworks/models/glm-5p2": {
-        "cache_read_input_token_cost": 2.6e-07,
+        "cache_read_input_token_cost": 1.4e-07,
         "input_cost_per_token": 1.4e-06,
         "litellm_provider": "fireworks_ai",
         "max_input_tokens": 1048576,
